@@ -1,20 +1,48 @@
-//
-//  AppDelegate.swift
-//  FakeNewsIdentifier
-//
-//  Created by 陳姸汝 on 2021/1/16.
-//
-
 import UIKit
 import CoreData
 
-@main
+
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    
+    
+    //Mark! Core Data Stack
+    lazy var persistentContainer: NSPersistentContainer = {
+        
+        let container = NSPersistentContainer(name: "FakeNewsIdentifier")
+        container.loadPersistentStores { description, error in
+            if let error = error as NSError?{
+                ("Unable to load persistent stores: \(error)")
+            }
+        }
+        print(NSPersistentContainer.defaultDirectoryURL())
+        return container
+    }()
+    
+    
+    func applicationDidEnterBackground(_ notification: Notification) {
+        do {
+            try persistentContainer.viewContext.save()
+        } catch {
+            print("Unable to Save Changes")
+            print("\(error), \(error.localizedDescription)")
+        }
+    }
 
-
-
+    
+    
+    //lazy var managedObjectContext : NSManagedObjectContext = {
+    //    return self.persistentContainer.viewContext
+    //}()
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if let rootVC = window?.rootViewController as? ViewController {
+            rootVC.container = persistentContainer
+        }
+        let _ = persistentContainer
         return true
     }
 
@@ -31,51 +59,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+}
 
-    // MARK: - Core Data stack
-
-    lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
-        let container = NSPersistentContainer(name: "FakeNewsIdentifier")
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
-            }
-        })
-        return container
-    }()
-
-    // MARK: - Core Data Saving support
-
+extension NSPersistentContainer{
     func saveContext () {
-        let context = persistentContainer.viewContext
-        if context.hasChanges {
+        if viewContext.hasChanges{
             do {
-                try context.save()
+                try viewContext.save()
+                print("success!")
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                fatalError("Unresolved Error \(nserror), \(nserror.userInfo)")
             }
         }
     }
-
 }
 
+
+// enumerateStrings
+extension String {
+    var numberOfWords: Int {
+        var count = 0
+        let range = startIndex..<endIndex
+        enumerateSubstrings(in: range, options: [.byWords, .substringNotRequired, .localized], { _, _, _, _ -> () in
+            count += 1
+        })
+        return count
+    }
+}
