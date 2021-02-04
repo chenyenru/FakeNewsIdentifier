@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "77600FB8-FB43-4F85-9DF4-E708A15801B1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2244A54B-83ED-4F03-8287-C138EA07D10D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FakeNewsIdentifier/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "persistentContainer"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "2244A54B-83ED-4F03-8287-C138EA07D10D - 7e6adf2c27a3dbd5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FakeNewsIdentifier.AppDelegate.persistentContainer.getter : __C.NSPersistentContainer"
+                  moduleName = "FakeNewsIdentifier"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chen_yenru/Documents/GitHub/FakeNewsIdentifier/FakeNewsIdentifier/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "217">
+               </Location>
+               <Location
+                  uuid = "2244A54B-83ED-4F03-8287-C138EA07D10D - 46f0a11fbc173705"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.NSPersistentContainer in FakeNewsIdentifier.AppDelegate.persistentContainer.getter : __C.NSPersistentContainer"
+                  moduleName = "FakeNewsIdentifier"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chen_yenru/Documents/GitHub/FakeNewsIdentifier/FakeNewsIdentifier/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "2244A54B-83ED-4F03-8287-C138EA07D10D - 36c7e632c16557c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FakeNewsIdentifier.AppDelegate.persistentContainer.setter : __C.NSPersistentContainer"
+                  moduleName = "FakeNewsIdentifier"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chen_yenru/Documents/GitHub/FakeNewsIdentifier/FakeNewsIdentifier/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "2244A54B-83ED-4F03-8287-C138EA07D10D - 3fa7c59369dcb7ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FakeNewsIdentifier.AppDelegate.persistentContainer.modify : __C.NSPersistentContainer"
+                  moduleName = "FakeNewsIdentifier"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chen_yenru/Documents/GitHub/FakeNewsIdentifier/FakeNewsIdentifier/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "2244A54B-83ED-4F03-8287-C138EA07D10D - 49df96be2ce61480"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FakeNewsIdentifier.AppDelegate.persistentContainer.modify : __C.NSPersistentContainer with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "FakeNewsIdentifier"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chen_yenru/Documents/GitHub/FakeNewsIdentifier/FakeNewsIdentifier/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "2244A54B-83ED-4F03-8287-C138EA07D10D - 7555f9c9626540bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FakeNewsIdentifier.AppDelegate.init() -&gt; FakeNewsIdentifier.AppDelegate"
+                  moduleName = "FakeNewsIdentifier"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chen_yenru/Documents/GitHub/FakeNewsIdentifier/FakeNewsIdentifier/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8"
+                  endingLineNumber = "8"
+                  offsetFromSymbolStart = "171">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F6BDB213-7D21-41CB-ACBF-2E89E4CEBA6F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FakeNewsIdentifier/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "persistentContainer"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
