@@ -3,11 +3,13 @@ import NaturalLanguage
 import CoreData
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var useDescriptions: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var resultImage: UIImageView!
     @IBOutlet weak var showResultButton: UIButton!
     @IBOutlet weak var movieReviewText: UITextView!
-            
+    
     private lazy var sentimentClassifier: NLModel? = {
         let model = try? NLModel(mlModel: MyTextClassifier_2().model)
         return model
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
     //var managedObjectContext: NSManagedObjectContext?
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.loadView()
         /*guard container != nil else {
             fatalError("This view needs a persistent container.")
         }
@@ -26,13 +29,13 @@ class ViewController: UIViewController {
         */
         movieReviewText.delegate = self
         self.showResultButton.isUserInteractionEnabled = false
-        self.showResultButton.alpha = 0.5
+        /*self.showResultButton.alpha = 0.5
         self.movieReviewText.layer.borderColor = UIColor.lightGray.cgColor
         self.movieReviewText.layer.borderWidth = 1
         self.movieReviewText.layer.cornerRadius = 5
         self.movieReviewText.textColor = UIColor.black
         self.movieReviewText.text = ""
-        
+        */
         /*switch self.movieReviewText.text.count {
         case self.movieReviewText.text.count>10:
             self.showResultButton.isUserInteractionEnabled = true
@@ -42,9 +45,12 @@ class ViewController: UIViewController {
             self.showResultButton.isUserInteractionEnabled = true
         }
         */
-        self.movieReviewText.clipsToBounds=true
+        /*self.movieReviewText.clipsToBounds=true
         self.movieReviewText.backgroundColor = UIColor(named:"Almond")
         self.movieReviewText.textAlignment = .center
+ */
+        self.movieReviewText.isScrollEnabled = false
+        self.view.addSubview(movieReviewText)
         self.resultLabel.text = ""
         self.movieReviewText.becomeFirstResponder()
         
@@ -56,6 +62,10 @@ class ViewController: UIViewController {
         
     
     @IBAction func showResult(_ sender: UIButton) {
+        if self.movieReviewText.text.count > 10{
+            self.resultLabel.text = "The news is too short"
+            return
+        }
         if let label = sentimentClassifier?.predictedLabel(for: self.movieReviewText.text) {
             switch label {
             case "True":

@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29A5DB357BC1554E7545E7BA /* Pods_FakeNewsIdentifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2163F55D54FB0557982E0D6 /* Pods_FakeNewsIdentifier.framework */; };
+		4FAE870C25CD264D00F22022 /* MyTextClassifier 2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE870B25CD264D00F22022 /* MyTextClassifier 2.mlmodel */; };
 		4FAF422725B28B4B0038E49D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF422625B28B4B0038E49D /* AppDelegate.swift */; };
 		4FAF422925B28B4B0038E49D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF422825B28B4B0038E49D /* SceneDelegate.swift */; };
 		4FAF422B25B28B4B0038E49D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAF422A25B28B4B0038E49D /* ViewController.swift */; };
 		4FAF422E25B28B4B0038E49D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF422C25B28B4B0038E49D /* Main.storyboard */; };
 		4FAF423325B28B500038E49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF423225B28B500038E49D /* Assets.xcassets */; };
 		4FAF423625B28B500038E49D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF423425B28B500038E49D /* LaunchScreen.storyboard */; };
-		4FCDE30725B2DEBD00AFAA77 /* MyTextClassifier 2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDE30625B2DEBC00AFAA77 /* MyTextClassifier 2.mlmodel */; };
 		4FCDE31425BD14AD00AFAA77 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDE31225BD14AD00AFAA77 /* User+CoreDataClass.swift */; };
 		4FCDE31525BD14AD00AFAA77 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCDE31325BD14AD00AFAA77 /* User+CoreDataProperties.swift */; };
 		4FCDE31B25BD179A00AFAA77 /* FakeNewsIdentifier.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 4FAF422F25B28B4B0038E49D /* FakeNewsIdentifier.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FAE870B25CD264D00F22022 /* MyTextClassifier 2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MyTextClassifier 2.mlmodel"; sourceTree = "<group>"; };
 		4FAF422325B28B4B0038E49D /* FakeNewsIdentifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeNewsIdentifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAF422625B28B4B0038E49D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FAF422825B28B4B0038E49D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,9 +31,11 @@
 		4FAF423225B28B500038E49D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FAF423525B28B500038E49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FAF423725B28B500038E49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FCDE30625B2DEBC00AFAA77 /* MyTextClassifier 2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "MyTextClassifier 2.mlmodel"; sourceTree = "<group>"; };
 		4FCDE31225BD14AD00AFAA77 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4FCDE31325BD14AD00AFAA77 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6F7E2D0D066F59168BB721B6 /* Pods-FakeNewsIdentifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNewsIdentifier.release.xcconfig"; path = "Target Support Files/Pods-FakeNewsIdentifier/Pods-FakeNewsIdentifier.release.xcconfig"; sourceTree = "<group>"; };
+		C16D48A251BB4A9AF42DD428 /* Pods-FakeNewsIdentifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FakeNewsIdentifier.debug.xcconfig"; path = "Target Support Files/Pods-FakeNewsIdentifier/Pods-FakeNewsIdentifier.debug.xcconfig"; sourceTree = "<group>"; };
+		F2163F55D54FB0557982E0D6 /* Pods_FakeNewsIdentifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FakeNewsIdentifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A5DB357BC1554E7545E7BA /* Pods_FakeNewsIdentifier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 				4FCDE31325BD14AD00AFAA77 /* User+CoreDataProperties.swift */,
 				4FAF422525B28B4B0038E49D /* FakeNewsIdentifier */,
 				4FAF422425B28B4B0038E49D /* Products */,
+				99EC59566AF7DDB49EE5407C /* Pods */,
+				6DDF1FE18C75161159F377C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,13 +77,31 @@
 				4FAF422825B28B4B0038E49D /* SceneDelegate.swift */,
 				4FAF422A25B28B4B0038E49D /* ViewController.swift */,
 				4FAF422C25B28B4B0038E49D /* Main.storyboard */,
-				4FCDE30625B2DEBC00AFAA77 /* MyTextClassifier 2.mlmodel */,
 				4FAF423225B28B500038E49D /* Assets.xcassets */,
+				4FAE870B25CD264D00F22022 /* MyTextClassifier 2.mlmodel */,
 				4FAF423425B28B500038E49D /* LaunchScreen.storyboard */,
 				4FAF423725B28B500038E49D /* Info.plist */,
 				4FAF422F25B28B4B0038E49D /* FakeNewsIdentifier.xcdatamodeld */,
 			);
 			path = FakeNewsIdentifier;
+			sourceTree = "<group>";
+		};
+		6DDF1FE18C75161159F377C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2163F55D54FB0557982E0D6 /* Pods_FakeNewsIdentifier.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99EC59566AF7DDB49EE5407C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C16D48A251BB4A9AF42DD428 /* Pods-FakeNewsIdentifier.debug.xcconfig */,
+				6F7E2D0D066F59168BB721B6 /* Pods-FakeNewsIdentifier.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FAF423A25B28B500038E49D /* Build configuration list for PBXNativeTarget "FakeNewsIdentifier" */;
 			buildPhases = (
+				632F8694D4ED5BF5BDE63135 /* [CP] Check Pods Manifest.lock */,
 				4FAF421F25B28B4B0038E49D /* Sources */,
 				4FAF422025B28B4B0038E49D /* Frameworks */,
 				4FAF422125B28B4B0038E49D /* Resources */,
+				C8C4C0A55E217F8B077B6D8D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		632F8694D4ED5BF5BDE63135 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FakeNewsIdentifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C4C0A55E217F8B077B6D8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FakeNewsIdentifier/Pods-FakeNewsIdentifier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FakeNewsIdentifier/Pods-FakeNewsIdentifier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FakeNewsIdentifier/Pods-FakeNewsIdentifier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FAF421F25B28B4B0038E49D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,10 +221,10 @@
 			files = (
 				4FAF422B25B28B4B0038E49D /* ViewController.swift in Sources */,
 				4FAF422725B28B4B0038E49D /* AppDelegate.swift in Sources */,
+				4FAE870C25CD264D00F22022 /* MyTextClassifier 2.mlmodel in Sources */,
 				4FCDE31425BD14AD00AFAA77 /* User+CoreDataClass.swift in Sources */,
 				4FCDE31525BD14AD00AFAA77 /* User+CoreDataProperties.swift in Sources */,
 				4FAF422925B28B4B0038E49D /* SceneDelegate.swift in Sources */,
-				4FCDE30725B2DEBD00AFAA77 /* MyTextClassifier 2.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +368,7 @@
 		};
 		4FAF423B25B28B500038E49D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16D48A251BB4A9AF42DD428 /* Pods-FakeNewsIdentifier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +388,7 @@
 		};
 		4FAF423C25B28B500038E49D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F7E2D0D066F59168BB721B6 /* Pods-FakeNewsIdentifier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
