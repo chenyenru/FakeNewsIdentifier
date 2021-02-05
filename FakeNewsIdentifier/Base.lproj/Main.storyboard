@@ -31,9 +31,6 @@
                                 <color key="textColor" name="Gunmetal"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Grm-f1-cRR"/>
-                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVt-AE-ncx">
                                 <rect key="frame" x="301" y="278.5" width="93" height="30"/>
@@ -84,7 +81,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="count_checker" destination="m0L-Rz-ix7" id="YEM-1N-4Yt"/>
                         <outlet property="movieReviewText" destination="m0L-Rz-ix7" id="JTP-uk-r0T"/>
                         <outlet property="resultImage" destination="nj2-0y-290" id="Am6-Wc-QWE"/>
                         <outlet property="resultLabel" destination="uGD-SC-JbQ" id="Dol-vP-7cl"/>

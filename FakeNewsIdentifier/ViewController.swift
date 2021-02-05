@@ -8,7 +8,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var showResultButton: UIButton!
     @IBOutlet weak var movieReviewText: UITextView!
             
-    
     private lazy var sentimentClassifier: NLModel? = {
         let model = try? NLModel(mlModel: MyTextClassifier_2().model)
         return model
@@ -25,7 +24,7 @@ class ViewController: UIViewController {
         }
         // The persistent container is available
         */
-        
+        movieReviewText.delegate = self
         self.showResultButton.isUserInteractionEnabled = false
         self.showResultButton.alpha = 0.5
         self.movieReviewText.layer.borderColor = UIColor.lightGray.cgColor
@@ -33,6 +32,16 @@ class ViewController: UIViewController {
         self.movieReviewText.layer.cornerRadius = 5
         self.movieReviewText.textColor = UIColor.black
         self.movieReviewText.text = ""
+        
+        /*switch self.movieReviewText.text.count {
+        case self.movieReviewText.text.count>10:
+            self.showResultButton.isUserInteractionEnabled = true
+        case self.movieReviewText.text.count < 10:
+            self.showResultButton.isUserInteractionEnabled = false
+        default:
+            self.showResultButton.isUserInteractionEnabled = true
+        }
+        */
         self.movieReviewText.clipsToBounds=true
         self.movieReviewText.backgroundColor = UIColor(named:"Almond")
         self.movieReviewText.textAlignment = .center
@@ -44,9 +53,7 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
-    
+        
     
     @IBAction func showResult(_ sender: UIButton) {
         if let label = sentimentClassifier?.predictedLabel(for: self.movieReviewText.text) {
